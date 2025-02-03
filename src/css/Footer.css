@@ -1,0 +1,26 @@
+.footer-section {
+    background-color: #cc0909;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-section a {
+    color: #bbb;
+    transition: 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: white;
+  }
+  
+  .footer-section i {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-section .row {
+      flex-direction: column;
+    }
+  }
+  
