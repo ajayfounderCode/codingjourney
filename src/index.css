@@ -120,7 +120,8 @@ code {
     display: flex;
   }
 
-  .action-button, .sign-up-button {
+  .action-button,
+  .sign-up-button {
     text-align: left;
     padding: 10px;
     color: white;
@@ -175,9 +176,27 @@ code {
   }
 
   .carousel-image:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+  .glass-card {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    max-width: 100%; /* Ensure it doesn't get constrained */
+    background: rgba(0, 0, 0, 0.2); /* Transparency */
+    backdrop-filter: blur(15px) saturate(150%);
+    box-shadow: 0 8px 32px rgba(62, 62, 62, 0.507);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    z-index: 2;
+    color: white;
+    display: flex; /* Flexbox for content */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+ 
 }
 
 /* Desktop View */
@@ -216,8 +235,22 @@ code {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  .glass-card{
-    width: 90%;
+
+  .glass-card {
+    width: 90%; /* Default width on larger screens */
+    max-width: 50%; /* Constrained width on larger screens */
+    background: rgba(0, 0, 0, 0.2); /* Transparency */
+    backdrop-filter: blur(15px) saturate(150%);
+    box-shadow: 0 8px 32px rgba(62, 62, 62, 0.507);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    z-index: 2;
+    color: white;
+    display: flex; /* Flexbox for content */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
   }
 }
 
@@ -304,17 +337,17 @@ code {
   z-index: 1;
 }
 
-.glass-card {
-  margin: 15px;
-  background: rgba(0, 0, 0, 0.2);
+/* .glass-card {
+  /* margin: 15px; */
+  /* background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(15px) saturate(150%);
   box-shadow: 0 8px 32px rgba(62, 62, 62, 0.507);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
   z-index: 2;
   max-width: 50%;
-  color: white;
-}
+  color: white; */
+/* } */ */
 
 .glass-card h1,
 .glass-card p {
